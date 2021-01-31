@@ -13,3 +13,8 @@ before_script:
   - php artisan cache:clear --no-interaction
   - php artisan config:clear --no-interaction
 
+script:
+
+branches:
+  only:
+    - production
