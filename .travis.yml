@@ -9,9 +9,9 @@ php:
 before_script:
   - composer self-update
   - composer install --no-interaction
-  - php artisan migrate
-  - php artisan cache:clear
-  - php artisan config:clear
+  - php artisan migrate --no-interaction
+  - php artisan cache:clear --no-interaction
+  - php artisan config:clear --no-interaction
 
 script:
   - vendor/bin/phpunit --coverage-text
