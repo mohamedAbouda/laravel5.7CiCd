@@ -12,6 +12,7 @@ before_script:
   - php artisan migrate --no-interaction
   - php artisan cache:clear --no-interaction
   - php artisan config:clear --no-interaction
+  - php artisan key:generate --no-interaction
 
 script:
 
