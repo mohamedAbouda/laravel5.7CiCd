@@ -10,7 +10,6 @@ before_script:
   - cp .env.travis .env
   - composer self-update
   - composer install --no-interaction
-  - php artisan migrate --no-interaction
   - php artisan cache:clear --no-interaction
   - php artisan config:clear --no-interaction
   - php artisan key:generate --no-interaction
